@@ -1,0 +1,38 @@
+[package]
+name = "rust-by-example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]] 
+name = "trait-example"
+path = "src/trait.rs"
+
+[[bin]] 
+name = "for-example"
+path = "src/for.rs"
+
+[[bin]] 
+name = "decorator-example"
+path = "src/design-pattern-decorator.rs"
+
+[[bin]] 
+name = "match-example"
+path = "src/match.rs"
+
+[[bin]] 
+name = "return-loops-example"
+path = "src/return-loops.rs"
+
+[[bin]] 
+name = "nesting-labels-example"
+path = "src/nesting_labels_loop.rs"
+
+[dependencies]
+tonic = "0.8"
+prost = "0.11"
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
+
+[build-dependencies]
+tonic-build = "0.8"
